@@ -1,0 +1,42 @@
+canvas {
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #d8b5ff, #1eae98);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+#container {
+    position: relative;
+}
+
+#container canvas {
+    position: absolute;
+}
+
+#buttons button {
+    position: relative;
+    border: 1px solid black;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: larger;
+}
+
+#help {
+    border-radius: 50%;
+    color: white;
+    background: black;
+}
+
+#buttons div {
+    position: relative;
+}
+
+#instructions {
+    position: relative;
+    background: black;
+    border: 1px solid white;
+    color: white;
+}
