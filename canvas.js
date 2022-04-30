@@ -64,17 +64,24 @@ help.addEventListener('click', e => {
 var c = canvas.getContext('2d');
 
 // Object
+/* Code adapted from "How to Code: Circular Motion"
+Author: Christopher Lis
+Date: Jan 2021
+Availability: https://youtu.be/raXW5J1Te7Y
+*/
 function CircleSF(x, y, radians, dist, type) {
     this.x = x;
     this.y = y;
     this.centerX = x;
     this.centerY = y;
     this.color = 'white';
+
     if (type =='c' || dist < 15) {
         this.radius = 1.5;
     } else {
         this.radius = 1 + Math.random() * 3;
     }
+
     this.radians = radians;
     this.velocity = 0.01;
     this.dist = dist;
@@ -119,7 +126,6 @@ function CircleSF(x, y, radians, dist, type) {
     }
 
 }
-
 
 // Implementation
 let circles;
