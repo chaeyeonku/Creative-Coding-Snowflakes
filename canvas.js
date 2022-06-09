@@ -44,7 +44,7 @@ reset.addEventListener('click', e => {
 });
 
 back.addEventListener('click', e => {
-    // location.reload();
+   location.href = "https://chaeyeonku.github.io/";
 });
 
 help.addEventListener('click', e => {
